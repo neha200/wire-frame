@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="Poetry and Arts">
+    <meta name="author" content="BlackSwan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shades And Phases</title>
+	<style>
+		{
+			box-sizing: border-box;
+        }
+/* Style the header */
+        header 
+        {
+         	background-color: #666;
+         	padding: 30px;
+         	text-align: center;
+         	font-size: 35px;
+         	color: white;
+        }
+/* Create two columns/boxes that floats next to each other */
+        nav 
+        {
+        	float: left;
+        	width: 30%;
+        	height: 600px; /* only for demonstration, should be removed */
+        	background: #ccc;
+        	padding: 20px;
+        }
+/* Style the list inside the menu */
+        nav ul 
+        {
+        	list-style-type: none;
+        	padding: 0;
+        }
+        article 
+        {
+        	float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+/* Clear floats after the columns */
+        section:after 
+        {
+         	content: "";
+            display: table;
+            clear: both;
+        }
+/* Style the footer */
+        footer 
+        {
+        	background-color: #777;
+        	padding: 10px;
+        	text-align: center;
+        	color: white;
+        }
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) 
+        {
+        	nav, article 
+        	{
+        		width: 100%;
+                height: auto;
+            }
+        }
+</style>
+</head>
+<body>
+	<center>
+        <header>
+        	<h4><p>Welcome To Shades And Phases Where Writers Find A Way To Get Inspired And Unleash Their Thoughts</p><h4>
+        </header> 
+        <section>
+        	<nav>
+        		<ul>
+        			<li>Authors</li><br><br>
+        			<li>Genre</li><br><br>
+        			<li>Your Readings</li><br><br>
+        			<li>Your Writings</li><br><br>
+                </ul>
+            </nav>
+        <h5>LOGIN</h5>
+        <form>
+        	<label for="Emailid">Email Id</label><br>
+            <input type="text/numbers/characters" id="Emailid" name="Emailid" value=""><br>
+            <label for="Password">Password</label><br>
+            <input type="text/numbers/characters" id="Password" name="Password" value=""><br><br>
+            <input type="checkbox">
+            <label> I AM NOT A ROBOT</label><br><br>
+            <input type="submit" value="Confirm">
+        </form> 
+	</center>
+<footer>
+	<p>Footer</p>
+</footer>
+</body>
+</html>
